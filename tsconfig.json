@@ -1,0 +1,35 @@
+// https://www.typescriptlang.org/tsconfig
+{
+	"compilerOptions": {
+		// Typings
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		// Modules
+		"lib": ["ESNext"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "ESNext",
+
+		// Emit
+		"outDir": "dist",
+		"sourceMap": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"allowSyntheticDefaultImports": true,
+		"removeComments": false,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"resolveJsonModule": true,
+		"importHelpers": true
+	},
+	"include": ["src", "environment.d.ts"],
+	"exclude": ["node_modules"]
+}
+
