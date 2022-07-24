@@ -70,4 +70,3 @@ export default new Event('interactionCreate', async (interaction) => {
 		}
 	}
 });
-

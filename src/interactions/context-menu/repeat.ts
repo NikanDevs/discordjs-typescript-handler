@@ -9,4 +9,3 @@ export const repeatContextmenu = {
 	permission: [],
 	type: 3,
 } as interactionOptions;
-

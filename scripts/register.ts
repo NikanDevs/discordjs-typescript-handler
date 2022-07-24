@@ -22,13 +22,9 @@ const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN.toStr
 		});
 		console.log('Register interactions globally');
 	} else {
-		await rest.put(
-			Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
-			{
-				body: commands,
-			}
-		);
+		await rest.put(Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID), {
+			body: commands,
+		});
 		console.log('Register interactions to guild ' + process.env.GUILD_ID);
 	}
 })();
-

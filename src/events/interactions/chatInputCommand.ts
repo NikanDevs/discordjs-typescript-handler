@@ -1,10 +1,4 @@
-import {
-	Collection,
-	Colors,
-	CommandInteractionOptionResolver,
-	EmbedBuilder,
-	GuildMember,
-} from 'discord.js';
+import { Collection, Colors, CommandInteractionOptionResolver, EmbedBuilder, GuildMember } from 'discord.js';
 import { client } from '../..';
 import { Event } from '../../structures/Event';
 const cooldown = new Collection<string, number>();
@@ -69,4 +63,3 @@ export default new Event('interactionCreate', async (interaction) => {
 		}
 	}
 });
-

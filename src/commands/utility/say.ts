@@ -11,4 +11,3 @@ export default new Command({
 		await interaction.reply({ embeds: [embed] });
 	},
 });
-

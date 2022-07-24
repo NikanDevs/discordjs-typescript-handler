@@ -18,4 +18,3 @@ export const sayCommand = {
 	min_length: 10,
 	max_length: 50,
 } as interactionOptions;
-

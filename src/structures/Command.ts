@@ -5,4 +5,3 @@ export class Command {
 		Object.assign(this, interaction);
 	}
 }
-

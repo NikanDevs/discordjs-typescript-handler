@@ -43,4 +43,3 @@ export type commandType = {
 	interaction: interactionOptions;
 	excute: excuteFunction;
 };
-

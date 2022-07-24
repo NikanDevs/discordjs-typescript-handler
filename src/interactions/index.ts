@@ -5,4 +5,3 @@ export const interactions = {
 	Repeat: repeatContextmenu,
 	say: sayCommand,
 };
-

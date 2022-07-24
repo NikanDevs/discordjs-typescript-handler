@@ -48,16 +48,12 @@ export class ExtendedClient extends Client {
 		for (const category of readdirSync(`${__dirname}/../events`)) {
 			if (category.endsWith('.ts') || category.endsWith('.js')) {
 				const filePath = `${__dirname}/../events/${category}`;
-				const event: Event<keyof ClientEvents> = await this.importFiles(
-					filePath.toString()
-				);
+				const event: Event<keyof ClientEvents> = await this.importFiles(filePath.toString());
 				this.on(event.event, event.run);
 			} else {
 				for (const fileName of readdirSync(`${__dirname}/../events/${category}`)) {
 					const filePath = `${__dirname}/../events/${category}/${fileName}`;
-					const event: Event<keyof ClientEvents> = await this.importFiles(
-						filePath.toString()
-					);
+					const event: Event<keyof ClientEvents> = await this.importFiles(filePath.toString());
 					this.on(event.event, event.run);
 				}
 			}
@@ -87,4 +83,3 @@ export class ExtendedClient extends Client {
 		});
 	}
 }
-
